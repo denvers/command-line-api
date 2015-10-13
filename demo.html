@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+<style type="text/css">
+#wrapper {
+	width: 75%;
+	margin: 50px auto;
+	text-align: center;
+	background-color: yellow;
+	padding: 40px;
+}
+#container {
+	font-family: Helvetica;
+	font-size: 40px;
+	color: magenta;
+}
+</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="container">DTC Media</div>
+		<input type="button" id="button" value="klik!">
+	</div>
+
+	<script>
+	function demoDemo() {
+
+		var newValue = "aap";
+		switch( document.querySelector("#container").innerHTML )
+		{
+				case "aap":
+				newValue = "noot";
+				break;
+				case "noot":
+				newValue = "mies";
+				break;
+				case "mies":
+				newValue = "aap";
+				break;
+		}
+		document.querySelector("#container").innerHTML = newValue;=
+	}
+
+	document.querySelector("#button").addEventListener('click', demoDemo);
+	</script>
+</body>
+</html>
