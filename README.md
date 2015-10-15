@@ -17,12 +17,18 @@ for (pic in pics) {
 }```
 
 ### Debugging JavaScript functions
+One of my favorites. Of course you can add breakpoints right into the Developer Tools, or add the ``debugger;`` command right into your JavaScript function, but I love the console. If you know your JavaScript function to debug, just add this snippet in the console and trigger the function via your website/GUI. Lovely function!
+
 ``debug(demoDemo)``
 
 ### Monitoring JavaScript functions
+Sometimes I want to check how often a function is called, and in some cases I want to know which arguments are passed to the function. Use this ``monitor`` function to get all this information!
+
 ``monitor(demoDemo)``
 
 ### See all Eventlisteners of a DOM object
+Oh my god, how often I needed this... Get all attached event listeners to your DOM object. Just use ``getEventListeners`` and pass the targeted DOM object to see all attached listeners right into your console!
+
 ``getEventListeners(document.querySelector("#button"))``
 
 ### Monitoring events of a DOM object
